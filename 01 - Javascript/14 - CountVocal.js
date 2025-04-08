@@ -1,11 +1,21 @@
 function hitungVokal(str) {
     // TODO
-    if (str === "" ) return "selesai"
-    return hitungVokal(str === 'a') + 1
-    return hitungVokal(str === 'i') + 1
-    return hitungVokal(str === 'u') + 1
-    return hitungVokal(str === 'e') + 1
-    return hitungVokal(str === 'o') + 1
+   const hurufVokal = ['a', 'i', 'u', 'e', 'o'];
+   const kalimat = str.replace(/\s/g, '').split("");
+   console.log(kalimat)
+
+   let hitung = 0;
+
+   for ( let i = 0 ; i < kalimat.length ; i++){
+        console.log(kalimat[i])
+       if( hurufVokal.includes(kalimat[i].toLowerCase()) ){
+            hitung++;
+       }
+
+   }
+
+   return hitung;
+
 }
 
 console.log(hitungVokal("programming is fun")); // Output: 5
