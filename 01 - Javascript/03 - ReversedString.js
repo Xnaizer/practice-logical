@@ -1,11 +1,12 @@
 function balikString(str){
     // TODO: Balikkan string, contoh "halo" -> "olah"
     let revStr = []
-    for( i = str.length -1  ; i > -1 ; i--) {
+    for ( i = str.length -1  ; i > -1 ; i--) {
         console.log(str[i])
         revStr.push(str[i])
 
     }
+    
     console.log(revStr);
 
     return revStr.join("")
