@@ -20,7 +20,7 @@ function isAnagram(str1, str2) {
     // versi lebih advance
 
     const cleanStr = (str) => {
-        str.toLowerCase().replace(/\s/g, '').split("").sort().join('');
+       return str.toLowerCase().replace(/\s/g, '').split("").sort().join('');
     }
     return cleanStr(str1) === cleanStr(str2);
 }
